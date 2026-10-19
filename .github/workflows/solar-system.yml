@@ -14,10 +14,11 @@ on:
     
 jobs:
     unit-testing:
+        runs-on: ubuntu-latest
         container:
           image: node:20
         name: Unit Testing
-        runs-on: ubuntu-latest
+        
         steps:
         - name: Checkout Repository
           uses: actions/checkout@v4
